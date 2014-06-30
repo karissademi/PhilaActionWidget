@@ -82,7 +82,6 @@ $message = <<<EOM
              <a href="http://phillypolice.com/forms/submit-a-tip">Submit a Police Tip</a> 
         </span>
     </div>
-</div>
     
 EOM;
 
