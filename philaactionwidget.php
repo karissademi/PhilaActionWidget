@@ -1,14 +1,14 @@
 <?php
 /* Plugin Name: Phila Action Widget
 Plugin URI: localhost/wordpress
-Description: Displays Payment Options
+Description: Displays Actionable Items
 Version: 1.0
 Author: Andrew Kennel
 Author URI: localhost/wordpress
 */
-add_shortcode('PhilaTakeAction', 'philaaction_handler');
+add_shortcode('PhilaActionWidget', 'philaaction_handler');
 
-function philapay_handler(){
+function philaaction_handler(){
 $message = <<<EOM
  
 <div id="PhilaActionWidget" class="PhilaWidget">
@@ -77,15 +77,12 @@ $message = <<<EOM
 			</div>
 		</div>
 	</span>
+    <span id="PhilaReportMainWindow">
+             <a href="http://www.phila.gov/ig/Pages/ReportWrongdoing.aspx">Report Fraud/Corruption</a>
+             <a href="http://phillypolice.com/forms/submit-a-tip">Submit a Police Tip</a> 
+        </span>
+    </div>
 </div>
-<div id="PhilaReportWidget" class="PhilaWidget">
-	<span id="PhilaReportMainWindow">
-		 <a href="http://www.phila.gov/ig/Pages/ReportWrongdoing.aspx">Report Fraud/Corruption</a>
-		 <a href="http://phillypolice.com/forms/submit-a-tip">Submit a Police Tip</a>
-		 <a href="http://potholes.phila.gov/tap.nsf/d15d032a30a36768852578850008337c?OpenForm">Report a Pothole</a>		 
-	</span>
-</div>
-
     
 EOM;
 
