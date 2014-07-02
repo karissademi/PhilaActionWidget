@@ -15,16 +15,16 @@ $message = <<<EOM
 	<span id="PhilaPayMainWindow">
 		<h1 class="PhilaWidgetTitle">I need to</h1>
         <div id="PhilaFindLinkBlock">
-			<div class="PhilaFindDropDown">
-				<select rows="2" name="PhilaFindJumpMenu" id="PhilaFindJumpMenu" onchange="javascript:document.location = this.value;">
-					<option value="#">Find</option>
-					<option value="http://www.phila.gov/health/ambulatoryhealth/index.html">Health Centers</option>
-					<option value="http://www.phila.gov/prisons/inmatelocator/inmatelocator.aspx">Inmate</option>
-					<option value="http://www.phila.gov/personnel/jobs.html">Job</option>
-					<option value="http://property.phila.gov/">Property</option>
-					<option value="http://www.phila.gov/ParksandRecreation/aboutus/Pages/FindYourPath.aspx">Your Path</option>
-				</select>
-			</div>
+                <div class="PhilaFindDropDown">
+                    <select rows="2" name="PhilaFindJumpMenu" id="PhilaFindJumpMenu" onchange="javascript:document.location = this.value;">
+                        <option value="" class="find">Find</option>
+                        <option value="http://www.phila.gov/health/ambulatoryhealth/index.html">Health Centers</option>
+                        <option value="http://www.phila.gov/prisons/inmatelocator/inmatelocator.aspx">Inmate</option>
+                        <option value="http://www.phila.gov/personnel/jobs.html">Job</option>
+                        <option value="http://property.phila.gov/">Property</option>
+                        <option value="http://www.phila.gov/ParksandRecreation/aboutus/Pages/FindYourPath.aspx">Your Path</option>
+                    </select>
+            </div>
 		</div>
         <div id="PhilaObtainLinkBlock">
 			<div class="PhilaObtainDropDown">
@@ -78,8 +78,8 @@ $message = <<<EOM
 		</div>
 	</span>
     <span id="PhilaReportMainWindow">
-             <a href="http://www.phila.gov/ig/Pages/ReportWrongdoing.aspx">Report Fraud/Corruption</a>
-             <a href="http://phillypolice.com/forms/submit-a-tip">Submit a Police Tip</a> 
+             <a href="http://www.phila.gov/ig/Pages/ReportWrongdoing.aspx" class="report">Report Fraud/Corruption</a>
+             <a href="http://phillypolice.com/forms/submit-a-tip" class="submit-tip">Submit a Police Tip</a> 
         </span>
     </div>
     
