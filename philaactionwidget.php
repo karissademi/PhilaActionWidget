@@ -16,8 +16,8 @@ $message = <<<EOM
 		<h1 class="PhilaWidgetTitle">I need to</h1>
         <div id="PhilaFindLinkBlock">
                 <div class="PhilaFindDropDown">
-                    <select rows="2" name="PhilaFindJumpMenu" id="PhilaFindJumpMenu" onchange="javascript:document.location = this.value;">
-                        <option value="" class="find">Find</option>
+                    <select rows="2" name="PhilaFindJumpMenu" id="PhilaFindJumpMenu" onchange="javascript:document.location = this.value;" class="pick-me" data-class="find-drop-down">
+                        <option value="">Find</option>
                         <option value="http://www.phila.gov/health/ambulatoryhealth/index.html">Health Centers</option>
                         <option value="http://www.phila.gov/prisons/inmatelocator/inmatelocator.aspx">Inmate</option>
                         <option value="http://www.phila.gov/personnel/jobs.html">Job</option>
@@ -28,8 +28,8 @@ $message = <<<EOM
 		</div>
         <div id="PhilaPayLinkBlock">
 			<div class="PhilaPayDropDown">
-				<select rows="2" name="PhilaPayJumpMenu" id="PhilaPayJumpMenu" onchange="javascript:document.location = this.value;">
-					<option value="#">Pay Online</option>
+				<select rows="2" name="PhilaPayJumpMenu" id="PhilaPayJumpMenu" onchange="javascript:document.location = this.value;" class="pick-me" data-class="pay-drop-down">
+					<option value="">Pay Online</option>
 					<option value="https://wmq.etimspayments.com/pbw/include/philadelphia_alarms/input.jsp">Alarm Registration/Fines</option>
 					<option value="https://wmq.etimspayments.com/pbw/include/philadelphia_sweep/input.jsp">Code Violation Notices</option>
 					<option value="https://secure.phila.gov/PaymentCenter/AccountLookup/PaymentLookup.aspx?lookup=b518d3cc-b74c-4360-8a22-687ce6b262c9">Environmental Health Services</option>
